@@ -21,3 +21,8 @@ hr {
 body {
   background: linear-gradient(45deg, $primary2, $tertiary2);
 }
+
+input {
+  @extend .input;
+  @extend .border-tertiary;
+}
