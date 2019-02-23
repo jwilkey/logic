@@ -1,10 +1,10 @@
-$base-color: #F9FBF8;
-$contrast-color: #090918;
+$base-color: #090918;
+$contrast-color: #F9FBF8;
 $primary: #268CA2;
 $primary2: lighten($primary, 12%);
-$secondary: #5C5346;
+$secondary: #33c399;
 $tertiary: #BDA8A4;
-$shadow-color: $primary;
+$shadow-color: $base-color;
 
 @import "../../../node_modules/tentkeep-vue/src/assets/sass/base";
 
@@ -19,10 +19,29 @@ hr {
 }
 
 body {
-  background: linear-gradient(45deg, $primary2, $tertiary2);
+  background: linear-gradient(45deg, $base-color, $primary);
+  font-family: 'Mukta', sans-serif;
 }
 
 input {
   @extend .input;
-  @extend .border-tertiary;
+  @extend .p1-bottom;
+  @extend .p1-top;
+  @extend .app-font;
+  @extend .border-secondary;
+  font-family: 'Mukta', sans-serif;
+}
+
+a {
+  color: $primary2;
+  font-family: 'Mukta', sans-serif;
+}
+
+// potential extensions for tentkeep-vue
+
+.primary3 {
+  color: lighten($primary, 30%);
+}
+.line80 {
+  line-height: 80%;
 }

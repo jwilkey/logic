@@ -89,6 +89,7 @@ export default {
 
 select {
   @extend .bg-base;
+  @extend .contrast;
   @extend .border-secondary;
   @extend .m1-right;
   @extend .p1;

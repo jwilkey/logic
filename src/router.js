@@ -1,21 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home'
-import Moods from './views/Moods'
+import Forms from './views/Forms'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/notes',
       name: 'home',
       component: Home
     },
     {
-      path: '/moods',
-      name: 'moods',
-      component: Moods
+      path: '/',
+      name: 'forms',
+      component: Forms
     },
     {
       path: '/about',
